@@ -11,7 +11,7 @@ class MainActivity : FlutterActivity() {
         MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), CHANNEL)
             .setMethodCallHandler { call, result ->
                 if (call.method.equals("getNativeMessage")) {
-                    result.success("Hi, Mom! This is from Java.")
+                    result.success("Hi, Mom!")
                 } else {
                     result.notImplemented()
                 }
